@@ -8,7 +8,8 @@ export default function Stats({ items }) {
 
   const numItems = items.length;
   const numPackedItems = items.filter((item) => item.packed).length;
-  const percentage = numItems === 0 ? 0 : Math.round((numPackedItems / numItems) * 100);
+  const percentage =
+    numItems === 0 ? 0 : Math.round((numPackedItems / numItems) * 100);
 
   return (
     <>

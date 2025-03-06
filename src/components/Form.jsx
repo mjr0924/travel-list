@@ -36,7 +36,8 @@ export default function Form({ onAddItems }) {
           type="text"
           placeholder="Item..."
           value={description}
-          onChange={handleChange} />
+          onChange={handleChange}
+        />
         <button>add</button>
       </form>
     </>

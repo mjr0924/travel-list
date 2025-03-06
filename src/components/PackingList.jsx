@@ -1,7 +1,12 @@
 import { useState } from "react";
 import { Item } from "./Item";
 
-export default function PackingList({ items, onDeleteItem, onToggleItem, onClearList }) {
+export default function PackingList({
+  items,
+  onDeleteItem,
+  onToggleItem,
+  onClearList,
+}) {
   const [sortBy, setSortBy] = useState("input");
 
   let sortedItems;
@@ -24,7 +29,8 @@ export default function PackingList({ items, onDeleteItem, onToggleItem, onClear
               item={item}
               key={item.id}
               onDeleteItem={onDeleteItem}
-              onToggleItem={onToggleItem} />
+              onToggleItem={onToggleItem}
+            />
           ))}
         </ul>
 
